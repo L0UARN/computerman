@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://w15210hwdw8f" path="res://sprites/Character.png" id="1_q8d8y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kovo7"]
-size = Vector2(32, 64)
+size = Vector2(32, 58)
 
 [node name="Character" type="CharacterBody2D"]
 script = ExtResource("1_autae")
@@ -15,6 +15,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("1_q8d8y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_kovo7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
