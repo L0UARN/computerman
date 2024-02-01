@@ -17,3 +17,5 @@ func _on_body_entered(body: Node2D) -> void:
 	if body is Character:
 		# If it is, we add coins to the character
 		body.add_coins(value)
+		# And then we delete the coin
+		queue_free()
