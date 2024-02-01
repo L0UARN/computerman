@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bllho7p1hdfbu"]
+[gd_scene load_steps=6 format=3 uid="uid://bllho7p1hdfbu"]
 
 [ext_resource type="Texture2D" uid="uid://csw4vfr8ndkia" path="res://sprites/Tiles.png" id="1_cdguu"]
 [ext_resource type="PackedScene" uid="uid://dakt61e1lryxa" path="res://scenes/character.tscn" id="2_3h6e3"]
+[ext_resource type="PackedScene" uid="uid://c3tg3053t8crv" path="res://scenes/coin.tscn" id="3_h8s22"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_774h1"]
 texture = ExtResource("1_cdguu")
@@ -37,3 +38,6 @@ layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -
 
 [node name="Character" parent="." instance=ExtResource("2_3h6e3")]
 position = Vector2(58, -71)
+
+[node name="Coin" parent="." instance=ExtResource("3_h8s22")]
+position = Vector2(178, -60)

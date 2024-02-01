@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3tg3053t8crv"]
+[gd_scene load_steps=4 format=3 uid="uid://c3tg3053t8crv"]
 
 [ext_resource type="Texture2D" uid="uid://34us2cx6b4m1" path="res://sprites/Coin.png" id="1_i68pc"]
+[ext_resource type="Script" path="res://scenes/coin.gd" id="1_mkgb0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pipai"]
 size = Vector2(32, 32)
 
 [node name="Coin" type="Area2D"]
 collision_layer = 0
+script = ExtResource("1_mkgb0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
