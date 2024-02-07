@@ -2,6 +2,7 @@ class_name Coin
 extends Area2D
 
 
+# How much the coin is worth
 @export var value: int = 1
 
 
